@@ -59,8 +59,8 @@ Uma API RESTful desenvolvida em Laravel para gestão de programas, candidatos e 
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/api-inscricoes-selecao.git
-cd api-inscricoes-selecao
+git clone https://github.com/JuelsonSoxi/api-inscricoes-selecao.git
+cd inscricoes_selecao_api
 ```
 
 2. **Instale as dependências**
@@ -82,9 +82,9 @@ php artisan key:generate
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=inscricoes_selecao
-DB_USERNAME=seu_usuario
-DB_PASSWORD=sua_senha
+DB_DATABASE=inscricoes_selecao_api
+DB_USERNAME=root
+DB_PASSWORD=
 ```
 
 5. **Execute as migrations e seeders**
@@ -144,9 +144,6 @@ Authorization: Bearer {seu_token}
 
 ### Usuários de Teste
 ```
-Email: admin@test.com
-Senha: 123456
-
 Email: soxi@test.com  
 Senha: 123456
 
@@ -179,8 +176,8 @@ Importe o arquivo `postman_collection.json` no Postman para ter todos os endpoin
 ```json
 POST /api/auth/register
 {
-    "name": "João Silva",
-    "email": "joao@email.com",
+    "name": "Juelson Soxi",
+    "email": "soxi@email.com",
     "password": "123456",
     "password_confirmation": "123456"
 }
